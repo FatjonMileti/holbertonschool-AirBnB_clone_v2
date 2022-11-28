@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 ''' *** *** '''
-from flask import Flask
 
+
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -19,7 +20,6 @@ def hbnb():
 @app.route('/c/<text>')
 def c_is(text):
     return f'C {text}'.replace('_', " ")
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
